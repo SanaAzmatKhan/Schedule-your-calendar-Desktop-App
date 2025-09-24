@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EA7DB46-7712-4797-A14F-C26BB75CEFE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Calendar_2019</RootNamespace>
+    <AssemblyName>Calendar_2019</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="All.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All.Designer.cs">
+      <DependentUpon>All.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoinment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoinment.Designer.cs">
+      <DependentUpon>Appoinment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="April.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="April.Designer.cs">
+      <DependentUpon>April.cs</DependentUpon>
+    </Compile>
+    <Compile Include="August.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="August.Designer.cs">
+      <DependentUpon>August.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar_2019DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Calendar_2019DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="December.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="December.Designer.cs">
+      <DependentUpon>December.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event.Designer.cs">
+      <DependentUpon>Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="February.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="February.Designer.cs">
+      <DependentUpon>February.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input.Designer.cs">
+      <DependentUpon>Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="January.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="January.Designer.cs">
+      <DependentUpon>January.cs</DependentUpon>
+    </Compile>
+    <Compile Include="July.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="July.Designer.cs">
+      <DependentUpon>July.cs</DependentUpon>
+    </Compile>
+    <Compile Include="June.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="June.Designer.cs">
+      <DependentUpon>June.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginPage.Designer.cs">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="March.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="March.Designer.cs">
+      <DependentUpon>March.cs</DependentUpon>
+    </Compile>
+    <Compile Include="May.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="May.Designer.cs">
+      <DependentUpon>May.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meeting.Designer.cs">
+      <DependentUpon>Meeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="November.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="November.Designer.cs">
+      <DependentUpon>November.cs</DependentUpon>
+    </Compile>
+    <Compile Include="October.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="October.Designer.cs">
+      <DependentUpon>October.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="September.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="September.Designer.cs">
+      <DependentUpon>September.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="All.resx">
+      <DependentUpon>All.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoinment.resx">
+      <DependentUpon>Appoinment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="April.resx">
+      <DependentUpon>April.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="August.resx">
+      <DependentUpon>August.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="December.resx">
+      <DependentUpon>December.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event.resx">
+      <DependentUpon>Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="February.resx">
+      <DependentUpon>February.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input.resx">
+      <DependentUpon>Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="January.resx">
+      <DependentUpon>January.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="July.resx">
+      <DependentUpon>July.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="June.resx">
+      <DependentUpon>June.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginPage.resx">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="March.resx">
+      <DependentUpon>March.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="May.resx">
+      <DependentUpon>May.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meeting.resx">
+      <DependentUpon>Meeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="November.resx">
+      <DependentUpon>November.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="October.resx">
+      <DependentUpon>October.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="September.resx">
+      <DependentUpon>September.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Calendar_2019DataSet.xsc">
+      <DependentUpon>Calendar_2019DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Calendar_2019DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Calendar_2019DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Calendar_2019DataSet.xss">
+      <DependentUpon>Calendar_2019DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2a683a13f506c3f7510ee6350eb486b5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monthly-calendar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5b20fbaeebc8405c06506b249c9a2fd1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC100569868.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-images-wallpapers-%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-blur-bright-326055.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-wallpaper-download-14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-vintage-watch-full-hd-wallpaper-1280-720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-wallpapers-hd-15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-blur-bright-3260551.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111768_beautiful-wallpapers-full-hd-1080p-wallpaper1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightsCheekwood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\151433-beautiful-desktop-wallpaper-1920x1200-samsung-galaxy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meeting-Pics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corporatebanner2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rawpixel-633847-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diydeskcalendar012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rawpixel-633847-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monthly-calendar11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5b20fbaeebc8405c06506b249c9a2fd11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC1005698681.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111768_beautiful-wallpapers-full-hd-1080p-wallpaper2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rawpixel-633847-unsplash2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1506784983877-45594efa4cbe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-with-white-flowers-beautiful-black-and-white-picture-slides-backgrounds1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lotus-wallpapers-27939-9551916.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
