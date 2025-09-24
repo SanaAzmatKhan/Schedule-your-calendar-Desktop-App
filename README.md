@@ -1,3 +1,3 @@
 This is a desktop application built on:
 SQL server & 
-ASP .net
+C#
